@@ -235,7 +235,7 @@
 
             <!--CARD 6 THE VALE-->
             <div class="card">
-                <div class="card-image" style="background-image: url(images/the-vale.jpg)"></div>
+                <div class="card-image" style="background-image: url(./images/hotels/cards/the-vale.jpg)"></div>
                 <div class="card-content">
 
                     <h1>The Vale</h1>
