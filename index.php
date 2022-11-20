@@ -151,6 +151,43 @@
             </div>
         </div>
     </div>
+
+    <!--CARD 4 WINTERFELL-->
+    <div class="card">
+        <div class="card-image" style="background-image: url(images/winterfell.jpg)"></div>
+        <div class="card-content">
+
+            <h1>Winterfell</h1>
+            <div class="subtitle">All-in-one bliss</div>
+            <p>
+                Winterfell is the capital of the Kingdom of the North and the seat and the ancestral home of the royal House Stark.
+                It is a very large castle located at the center of the North, from where the head of House Stark rules over his or her people.
+                This Esteemed hotel offers a wide range of in-house royal entertainment, luxury spars and gourmet dishes.
+                Winterfell is for holiday makers who enjoy the simplicity of having everything in one place.
+                <br><br>
+                <i class="fas fa-swimmer"></i> Pool: Yes<br>
+                <i class="fas fa-wifi"></i> WiFi: Yes<br>
+                <i class="fas fa-umbrella-beach"></i> Ocean view: Yes<br>
+                <i class="fas fa-paw"></i> Pets allowed: No<br>
+            </p>
+
+            <div class="card-details">
+                <div class="card-details-inner">
+                    <div class="read-more">
+                        <button class="button modal-btn-4">View Gallery</button>
+                    </div>
+                    <div class="reviews">
+                        <div>
+                            &#9733 &#9733 &#9733
+                        </div>
+                        <div>
+                            421 reviews
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
