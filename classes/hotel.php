@@ -1,4 +1,13 @@
 <?php
+spl_autoload_register('autoLoadHotel');
+
+function autoLoadHotel($hotel) {
+    $path = "classes/";
+    $ext = ".php";
+    $fullPath = $path . $hotel .$ext;
+
+    include_once $fullPath;
+}
 
 Class Hotel {
     public $name;

@@ -33,7 +33,7 @@ class Booking {
     private $surname;
 
     //CONSTRUCTOR
-    public function __construct($hotelName, $name, $surname, $checkInDate, $checkOutDate) {
+    public function __construct($hotelName, $price, $name, $surname, $checkInDate, $checkOutDate) {
         $this->hotelName = $hotelName;     
         $this->price = $price; 
         $this->name = $name;
@@ -212,7 +212,7 @@ if (is_numeric($_POST['name']) || is_numeric($_POST['surname']) || is_numeric($_
 }
 
 else {
-   $booking = new Booking($_SESSION['hotel'], $_SESSION['name'], $_SESSION['surname'], $_SESSION['checkInDate'], $_SESSION['checkOutDate']);
+   $booking = new Booking($_SESSION['hotel'],$_SESSION['price'], $_SESSION['name'], $_SESSION['surname'], $_SESSION['checkInDate'], $_SESSION['checkOutDate']);
    $booking->addNumberOfDaysToArray();
    $booking->addTotalToArray();
    $booking->displayBookingDetails();        
@@ -220,7 +220,8 @@ else {
 
 $_SESSION['numberOfDays'] = $_POST['numberOfDays'];
 $_SESSION['total'] = $_POST['total'];
-file_put_contents('userinfo.json', json_encode($_SESSION, JSON_PRETTY_PRINT));
+spl_autoload_register('autoLoadHotel');
+//file_put_contents('userinfo.json', json_encode($_SESSION, JSON_PRETTY_PRINT));
  
 ?>
 
