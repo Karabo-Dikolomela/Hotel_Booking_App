@@ -108,6 +108,49 @@
         </div>
     </div>
 
+    <!--HOTEL INFO SECTION 2-->
+    <div class="card-container">
+        <div class="flex-container">
+
+            <!--CARD 3 HIGH GARDEN-->
+            <div class="card">
+                <div class="card-image" style="background-image: url(images/high-garden.jpg)"></div>
+                <div class="card-content">
+
+                    <h1>High Garden</h1>
+                    <div class="subtitle">Pure relaxation</div>
+                    <p class="hotel-info">
+                        Highgarden is a castle which serves as the seat of House Tyrell, the regional capital of the Reach,
+                        and the heart of chivalry in the Seven Kingdoms. It lies on the Mander where the ocean road meets the roseroad,
+                        making it an important crossroads.<br>
+                        High Garden is a cosy hotel with extraordinary views of the ocean, a sight for the gods.
+                        It is close to the coast of white-sand and crystal clear waters, said to be nested by the great Drogon dragon of the west.
+                        High Garden is a five-star establishment, promising unimaginable comfort and relaxation.<br><br>
+                        <i class="fas fa-swimmer"></i> Pool: Yes<br>
+                        <i class="fas fa-wifi"></i> WiFi: Yes<br>
+                        <i class="fas fa-umbrella-beach"></i> Ocean view: Yes<br>
+                        <i class="fas fa-paw"></i> Pets allowed: No<br>
+                    </p>
+
+                    <div class="card-details">
+                        <div class="card-details-inner">
+                            <div class="read-more">
+                                <button class="button modal-btn-3">View Gallery</button>
+                            </div>
+                            <div class="reviews">
+                                <div>
+                                    &#9733 &#9733 &#9733 &#9733 &#9733
+                                </div>
+                                <div>
+                                    536 reviews
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
