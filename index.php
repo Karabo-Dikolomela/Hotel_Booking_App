@@ -188,6 +188,44 @@
             </div>
         </div>
     </div>
+
+    <!--CARD 5 KINGS LANDING-->
+    <div class="card">
+        <div class="card-image" style="background-image: url(images/kings-landing.jpg)"></div>
+        <div class="card-content">
+
+            <h1>King's Landing</h1>
+            <div class="subtitle">A home away from home</div>
+            <p class="hotel-info">
+                King's Landing is the largest city on the continent of Westeros and is the capital of the Seven Kingdoms.
+                It is located on the east coast of the continent, on the northern banks of the Blackwater Rush as it flows out into Blackwater Bay.
+                The city is not located within the borders of any of the former independent kingdoms.
+                The surrounding area are directly controlled from the city under the authority of the King on the Iron Throne.<br>
+                A distance from noisy streets, this hotel offers a piece of mind and a senctuary for those seeking an
+                escape from the stresses that come with daily endavours. Full privacy, full service. Bring your pets along if you wish.<br><br>
+                <i class="fas fa-swimmer"></i> Pool: Yes<br>
+                <i class="fas fa-wifi"></i> WiFi: Yes<br>
+                <i class="fas fa-umbrella-beach"></i> Ocean view: Yes<br>
+                <i class="fas fa-paw"></i> Pets allowed: Yes<br>
+            </p>
+
+            <div class="card-details">
+                <div class="card-details-inner">
+                    <div class="read-more">
+                        <button class="button modal-btn-5">View Gallery</button>
+                    </div>
+                    <div class="reviews">
+                        <div>
+                            &#9733 &#9733 &#9733 &#9733
+                        </div>
+                        <div>
+                            299 reviews
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
