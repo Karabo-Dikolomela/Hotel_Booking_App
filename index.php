@@ -277,58 +277,71 @@
 
     <br><br><br>
 
-         <!--BOOKING FORM GRID-->
-         <div id="booking-form" class="booking-form-container">
+    <!--BOOKING FORM GRID-->
+    <div id="booking-form" class="booking-form-container">
 
-<form class="booking-form" action="booking.php" method="post">
+        <form class="booking-form" action="booking.php" method="post">
 
-    <div class="bookingform-grid-container">
-        <div class="item-a">
-            <label for="hotel">Choose a hotel:</label>
-            <select class="hotel-options" name="hotel">
-                <option value="Casterly Rock" name="CasterlyRock">Casterly Rock</option>
-                <option value="Bravosi" name="Bravosi">Bravosi</option>
-                <option value="High Garden" name="HighGarden">High Garden</option>
-                <option value="Winterfell" name="Winterfell">Winterfell</option>
-                <option value="King's Landing" name="KingsLanding">King's Landing</option>
-                <option value="The Vale" name="TheVale">The Vale</option>
-            </select>
-        </div>
+            <div class="bookingform-grid-container">
+                <div class="item-a">
+                    <label for="hotel">Choose a hotel:</label>
+                    <select class="hotel-options" name="hotel">
+                        <option value="Casterly Rock" name="CasterlyRock">Casterly Rock</option>
+                        <option value="Bravosi" name="Bravosi">Bravosi</option>
+                        <option value="High Garden" name="HighGarden">High Garden</option>
+                        <option value="Winterfell" name="Winterfell">Winterfell</option>
+                        <option value="King's Landing" name="KingsLanding">King's Landing</option>
+                        <option value="The Vale" name="TheVale">The Vale</option>
+                    </select>
+                </div>
 
-        <div class="item-b">
-            <label for="name">First Name</label>
-            <input class="font-lighter" type="text" name="name" placeholder="Your name">
-        </div>
+                <div class="item-b">
+                    <label for="name">First Name</label>
+                    <input class="font-lighter" type="text" name="name" placeholder="Your name">
+                </div>
 
-        <div class="item-c">
-            <label for="surname">Surname</label>
-            <input class="font-lighter" type="text" name="surname" placeholder="Your surname">
-        </div>
+                <div class="item-c">
+                    <label for="surname">Surname</label>
+                    <input class="font-lighter" type="text" name="surname" placeholder="Your surname">
+                </div>
 
-        <div class="item-d">
-            <label for="emailAddress">Email Address</label>
-            <input class="font-lighter" type="text" name="emailAddress" placeholder="Your email address" class="email">
-        </div>
+                <div class="item-d">
+                    <label for="emailAddress">Email Address</label>
+                    <input class="font-lighter" type="text" name="emailAddress" placeholder="Your email address" class="email">
+                </div>
 
-        <input type="hidden" name="numberOfDays">
+                <input type="hidden" name="numberOfDays">
 
-        <div class="item-e">
-            <label for="checkInDate">Arrival</label>
-            <input class="font-lighter date-picker" type="date" name="checkInDate">
-        </div>
+                <div class="item-e">
+                    <label for="checkInDate">Arrival</label>
+                    <input class="font-lighter date-picker" type="date" name="checkInDate">
+                </div>
 
-        <div class="item-f">
-            <label for="checkOutDate">Departure</label>
-            <input class="font-lighter date-picker" type="date" name="checkOutDate">
-        </div>
+                <div class="item-f">
+                    <label for="checkOutDate">Departure</label>
+                    <input class="font-lighter date-picker" type="date" name="checkOutDate">
+                </div>
 
-        <div class="item-g">
-            <input class="button submit-button" type="submit">
-        </div>
+                <div class="item-g">
+                    <input class="button submit-button" type="submit">
+                </div>
 
+            </div>
+
+        </form>
     </div>
 
-</form>
+    <?php
+    if (isset($_GET['error'])) {
+        if ($_GET['error'] == "emptyinput") {
+            echo '<script type="text/javascript">alert("Please fill in all fields." )</script>';
+        } else if ($_GET['error'] == "dateinvalid") {
+            echo '<script type="text/javascript">alert("Please choose a check-out date that is later than the check-in date.")</script>';
+        } else if ($_GET['error'] == "notnumber") {
+            echo '<script type="text/javascript">alert("This cannot be a number.")</script>';
+        }
+    }
+    ?>  
 </body>
 
 </html>
