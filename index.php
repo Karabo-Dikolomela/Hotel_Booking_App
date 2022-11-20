@@ -226,6 +226,43 @@
             </div>
         </div>
     </div>
+
+    <!--CARD 6 THE VALE-->
+    <div class="card">
+        <div class="card-image" style="background-image: url(images/the-vale.jpg)"></div>
+        <div class="card-content">
+
+            <h1>The Vale</h1>
+            <div class="subtitle">A fun-packed experience</div>
+            <p>
+                The Vale of Arryn is a fertile valley bordered by the Mountains of the Moon in eastern Westeros.
+                The valley gives its name to the larger realm ruled by House Arryn, commonly called the Vale of Arryn,
+                which includes the Mountains of the Moon, the Fingers, and islands in the Bite and the narrow sea.
+                Amidst a spectacular mountain range, this one's for the adventourous traveller.
+                Guests have a range of exhilarating activities to choose from, such as rockclimbing, ziplining and river rafting.<br><br>
+                <i class="fas fa-swimmer"></i> Pool: Yes<br>
+                <i class="fas fa-wifi"></i> WiFi: Yes<br>
+                <i class="fas fa-umbrella-beach"></i> Ocean view: Yes<br>
+                <i class="fas fa-paw"></i> Pets allowed: Yes<br>
+            </p>
+
+            <div class="card-details">
+                <div class="card-details-inner">
+                    <div class="read-more">
+                        <button class="button modal-btn-6">View Gallery</button>
+                    </div>
+                    <div class="reviews">
+                        <div>
+                            &#9733 &#9733 &#9733
+                        </div>
+                        <div>
+                            453 reviews
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
