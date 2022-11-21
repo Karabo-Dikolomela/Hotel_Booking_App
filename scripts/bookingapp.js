@@ -93,22 +93,22 @@ closeBtn6.addEventListener('click', function () {
 });
 
 // DISPLAY BOOKING FORM
-let div = document.getElementById('#booking-form');
-let display = 0;
-function displayBooking(){
-    if(display == 1){
-        div.style.display = "block";
-        display = 0;
+// let div = document.getElementById('#booking-form');
+// let display = 0;
+// function displayBooking(){
+//     if(display == 1){
+//         div.style.display = "block";
+//         display = 0;
 
-document.getElementById("#doneL").onclick = function () {
-        location.href = "#booking-form";
+// document.getElementById("#doneL").onclick = function () {
+//         location.href = "#booking-form";
 
-    }
-}else{
-        div.style.display = "none";
-        display = 1;
-    }
-}
+//     }
+// }else{
+//         div.style.display = "none";
+//         display = 1;
+//     }
+// }
 
 //  const toggleToForm = document.querySelector("#doneL");
 //  const openBookingForm = document.querySelector('.booking-form-container')

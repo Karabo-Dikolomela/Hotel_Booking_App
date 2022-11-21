@@ -1,4 +1,13 @@
 <?php
+spl_autoload_register('autoLoadUser');
+
+function autoLoadHotel($user) {
+    $path = "classes/";
+    $ext = ".php";
+    $fullPath = $path . $user .$ext;
+
+    include_once $fullPath;
+}
 
 $_SESSION['name'] = $_POST['name'];
 $_SESSION['surname'] = $_POST['surname'];

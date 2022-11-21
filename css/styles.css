@@ -759,9 +759,9 @@ label {
        
     }
 
-    /* #booking-form {
-         display: none;
-    } */
+    #booking-form {
+         display: block;
+    }
 
     .booking-form-grid-container {
         padding-left: 20%;
