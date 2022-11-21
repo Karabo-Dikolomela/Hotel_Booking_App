@@ -35,7 +35,7 @@
 
             <!--CARD 1 CASTERLY ROCKL-->
             <div class="card">
-                <div class="card-image" style="background-image: url(./images/hotels/cards/casterly-rock-1.jpg)"></div>
+                <div class="card-image" style="background-image: url(./images/hotels/cards/casterly-rock.jpg)"></div>
                 <div class="card-content">
 
                     <h1>Casterly Rock</h1>
@@ -341,7 +341,42 @@
             echo '<script type="text/javascript">alert("This cannot be a number.")</script>';
         }
     }
-    ?>  
+    ?>
+
+    <!--MODAL 1-->
+    <div id="modal-1" class="modal-overlay">
+        <div class="modal-container">
+            <a class="close-btn close-btn-1">X</a>
+        </div>
+
+        <!--HOTEL GALLERY-->
+        <div class="gallery-container">
+
+            <div class="grid">
+
+                <div class="cell">
+                    <img src="/images/hotels/gallery/casterly-rock-1.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="/images/hotels/gallery/casterly-rock-2.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="/images/hotels/gallery/casterly-rock-3.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="/images/hotels/gallery/casterly-rock-4.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="/images/hotels/gallery/casterly-rock-5.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="/images/hotels/gallery/casterly-rock-6.jpg" class="responsive-image" />
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </body>
 
 </html>
