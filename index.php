@@ -552,6 +552,7 @@
     </div>
 
     <script src="/scripts/bookingapp.js"></script>
+    <script src="/scripts/header.js"></script>
 
 </body>
 
