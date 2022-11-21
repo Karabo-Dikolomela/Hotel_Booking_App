@@ -457,22 +457,56 @@
 
             <div class="grid">
                 <div class="cell">
-                    <img src="images/winterfell-1.jpg" class="responsive-image" />
+                    <img src="/images/hotels/winterfell-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="images/winterfell-2.jpg" class="responsive-image" />
+                    <img src="/images/hotels/winterfell-2.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="images/winterfell-3.jpg" class="responsive-image" />
+                    <img src="/images/hotels/winterfell-3.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="images/winterfell-4.jpg" class="responsive-image" />
+                    <img src="/images/hotels/winterfell-4.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="images/winterfell-5.jpg" class="responsive-image" />
+                    <img src="/images/hotels/winterfell-5.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="images/winterfell-6.jpg" class="responsive-image" />
+                    <img src="/images/hotels/winterfell-6.jpg" class="responsive-image" />
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+        <!--MODAL 5-->
+        <div id="modal-5" class="modal-overlay">
+        <div class="modal-container">
+            <a class="close-btn close-btn-5">X</a>
+        </div>
+
+        <!--HOTEL GALLERY-->
+        <div class="gallery-container">
+
+            <div class="grid">
+                <div class="cell">
+                    <img src="/images/hotels/kings-landing-1.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="/images/hotels/kings-landing-2.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="/images/hotels/kings-landing-3.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="/images/hotels/kings-landing-4.jpg.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="/images/hotels/kings-landing-5.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="/images/hotels/kings-landing-6.jpg" class="responsive-image" />
                 </div>
             </div>
 
