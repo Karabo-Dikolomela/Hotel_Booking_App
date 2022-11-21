@@ -548,7 +548,7 @@
 
     </div>
 
-    
+    <script src="/scripts/bookingapp.js"></script>
 
 </body>
 
