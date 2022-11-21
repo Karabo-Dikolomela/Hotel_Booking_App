@@ -377,6 +377,40 @@
         </div>
 
     </div>
+
+    <!--MODAL 2-->
+    <div id="modal-2" class="modal-overlay">
+        <div class="modal-container">
+            <a class="close-btn close-btn-2">X</a>
+        </div>
+
+        <!--HOTEL GALLERY-->
+        <div class="gallery-container">
+
+            <div class="grid">
+                <div class="cell">
+                    <img src="/images/hotels/gallery/bravosi-1.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="/images/hotels/gallery/bravosi-2.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="/images/hotels/gallery/bravosi-3.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="/images/hotels/gallery/bravosi-4.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="/images/hotels/gallery/bravosi-5.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="/images/hotels/gallery/bravosi-6.jpg" class="responsive-image" />
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </body>
 
 </html>
