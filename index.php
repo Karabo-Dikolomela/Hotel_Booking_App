@@ -514,6 +514,42 @@
 
     </div>
 
+        <!--MODAL 6-->
+        <div id="modal-6" class="modal-overlay">
+        <div class="modal-container">
+            <a class="close-btn close-btn-6">X</a>
+        </div>
+
+        <!--HOTEL GALLERY-->
+        <div class="gallery-container">
+
+            <div class="grid">
+                <div class="cell">
+                    <img src="images/the-vale-1.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="images/the-vale-2.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="images/the-vale-3.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="images/the-vale-4.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="images/the-vale-5.jpg" class="responsive-image" />
+                </div>
+                <div class="cell">
+                    <img src="images/the-vale-6.jpg" class="responsive-image" />
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
 </body>
 
 </html>
