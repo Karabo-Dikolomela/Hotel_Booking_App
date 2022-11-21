@@ -29,5 +29,8 @@
             </div>
         </div>
     </header>
+    <script src="/scripts/header.js"></script>
+    <script src="/scripts/login-register.js"></script>
+
 </body>
 </html>

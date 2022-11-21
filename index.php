@@ -16,6 +16,8 @@
     
     <div id="background">
     <?php require("includes/header.php") ?>
+    <?php require("includes/login-register.php") ?>
+
 
         <div class="title-container">
             <img src="./images/logo/8.png" alt="heavenly stay Logo" id="AppLogo">
@@ -552,7 +554,7 @@
     </div>
 
     <script src="/scripts/bookingapp.js"></script>
-    <script src="/scripts/header.js"></script>
+    
 
 </body>
 
