@@ -16,14 +16,11 @@
   
 <?php
 
-// $jsonHotels = file_get_contents('hotels.json');
-// $hotels = json_decode($jsonHotels, true);
+$jsonHotels = file_get_contents('hotels.json');
+$hotels = json_decode($jsonHotels, true);
 
-// $jsonUserinfo = file_get_contents('userinfo.json');
-// $userInfo = json_decode($jsonUserinfo, true);
-
-spl_autoload_register('autoLoadHotel');
-spl_autoload_register('autoLoadUser');
+$jsonUserinfo = file_get_contents('userinfo.json');
+$userInfo = json_decode($jsonUserinfo, true);
 
 $numberOfDays = $userInfo['numberOfDays'];
 $total = $userInfo['total'];
