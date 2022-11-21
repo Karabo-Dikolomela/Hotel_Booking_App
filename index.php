@@ -15,7 +15,7 @@
 <body>
     
     <div id="background">
-    <?php require("include/header.php") ?>
+    <?php require("includes/header.php") ?>
 
         <div class="title-container">
             <img src="./images/logo/8.png" alt="heavenly stay Logo" id="AppLogo">
