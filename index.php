@@ -33,44 +33,25 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
 <body>
 
     <!--TITLE IMAGE-->
-    <!-- <header id="header" class="">
-
-        <nav class="navbar navbar-expand-lg bg-light px-lg-3 py-lg-2 shadow-sm sticky-top">
-            <div class="container-fluid">
-                <h2 class="heavenly">HEAVENLY STAY</h2><br>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active me-2" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link me-2" href="#">Hotels</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link me-2" href="#">Booking</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link me-2" href="#">Contact us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                    </ul>
-                    <div class="d-flex" role="search">
-                        <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
-                            Login
-                        </button>
-                        <button type="button" class="btn btn-outline-dark shadow-none" data-bs-toggle="modal" data-bs-target="#registerModal">
-                            Register
-                        </button>
-                    </div>
-                </div>
+    <header id="header" class="">
+        <div class="header-cont">
+            <div class="left-cont">
+                <ul class="main-nav">
+                    <li class="nav-item active">Home</li>
+                    <li class="nav-item">View Hotels</li>
+                    <li class="nav-item">Booking</li>
+                    <li class="nav-item">Contact Us</li>
+                    <li class="nav-item">About</li>
+                </ul>
             </div>
-        </nav>
-    </header> -->
+            <div class="center">
+                <button id="show-login">Login</button>
+            </div>
+            <div class="center1">
+                <button id="show-register">Register</button>
+            </div>
+        </div>
+    </header>
 
     <div id="background">
         <!-- <img src="" alt = "background image"> -->
@@ -81,31 +62,61 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
         </div>
     </div>
 
-    <!--header id="header" class="">
-        <div class="header-cont container">
-            <div class="left-cont">
-                <h2>HEAVENLY STAY</h2>
-                <ul class="main-nav">
-                    <li class="nav-item active">Home</li>
-                    <li class="nav-item">Login</li>
-                    <li class="nav-item">Gallery</li>
-                    <li class="nav-item">Booking</li>
-                    <li class="nav-item">Contact Us</li>
-                </ul>
+    <Form id="popup" class="popup" action="" method="POST">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h2>Login</h2>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <div class="form-element">
 
-                <div id="background">
-                    <div class="title-container">
-                        <img src="./css/icons/6.png" alt="heavenly stay Logo" id="AppLogo">
-                        <p class="tagline">Book your dream holiday.</p>
-                        <a href="#call-to-action"><i class="arrow-down bounce fas fa-angle-double-down fa-2x"></i></a>
-                    </div>
-                </div>
+                <button id="doneL" onclick="displayBooking()">Login</button>
+
+
+
             </div>
 
         </div>
-
-
-    </header-->
+    </Form>
+    <form id="popup1" class="popup1" method="post">
+        <div class="close-btn1">&times;</div>
+        <div class="form1">
+            <h2>Register</h2>
+            <div class="form-element1">
+                <label for="email">First Name</label>
+                <input type="text" id="email" placeholder="Enter name" required>
+            </div>
+            <div class="form-element1">
+                <label for="email">Last Name</label>
+                <input type="text" id="email" placeholder="Enter Last name" required>
+            </div>
+            <div class="form-element1">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-element1">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="form-element1">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <div class="form-element1">
+                <button id="doneR">register</button>
+            </div>
+        </div>
+    </form>
 
     <!--CALL-TO-ACTION MESSAGE-->
     <div id="call-to-action" class="call-to-action">
@@ -283,8 +294,8 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
     <div class="card-container">
         <div class="flex-container">
 
-    <!--CARD 5 KINGS LANDING-->
-    <div class="card">
+            <!--CARD 5 KINGS LANDING-->
+            <div class="card">
                 <div class="card-image" style="background-image: url(./images/hotels/cards/kings-landing.jpg)"></div>
                 <div class="card-content">
 
@@ -321,8 +332,8 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
                 </div>
             </div>
 
-             <!--CARD 6 THE VALE-->
-             <div class="card">
+            <!--CARD 6 THE VALE-->
+            <div class="card">
                 <div class="card-image" style="background-image: url(./images/hotels/cards/the-vale.jpg)"></div>
                 <div class="card-content">
 
@@ -443,7 +454,7 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
         <div class="gallery-container">
 
             <div class="grid">
-            <div class="cell">
+                <div class="cell">
                     <img src="/images/casterly-rock-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
@@ -477,7 +488,7 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
         <div class="gallery-container">
 
             <div class="grid">
-            <div class="cell">
+                <div class="cell">
                     <img src="/images/hotels/gallery/bravosi-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
@@ -512,11 +523,11 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
         <div class="gallery-container">
 
             <div class="grid">
-            <div class="cell">
+                <div class="cell">
                     <img src="/images/hotels/high-garden-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/high-garden-2.jpg class="responsive-image" />
+                    <img src="/images/hotels/high-garden-2.jpg class=" responsive-image" />
                 </div>
                 <div class="cell">
                     <img src="/images/hotels/high-garden-3.jpg" class="responsive-image" />
@@ -547,7 +558,7 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
         <div class="gallery-container">
 
             <div class="grid">
-            <div class="cell">
+                <div class="cell">
                     <img src="/images/hotels/winterfell-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
@@ -581,7 +592,7 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
         <div class="gallery-container">
 
             <div class="grid">
-            <div class="cell">
+                <div class="cell">
                     <img src="/images/hotels/kings-landing-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
@@ -615,7 +626,7 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
         <div class="gallery-container">
 
             <div class="grid">
-            <div class="cell">
+                <div class="cell">
                     <img src="images/the-vale-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
@@ -640,6 +651,8 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
     </div>
 
     <script src="scripts/bookingapp.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/login-register.js"></script>
 </body>
 
 </html>
