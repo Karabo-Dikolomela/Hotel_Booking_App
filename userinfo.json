@@ -1,11 +1,11 @@
 {
-    "hotel": "High Garden",
+    "hotel": "Casterly Rock",
     "name": "Karabo",
     "surname": "Dikolomela",
     "emailAddress": "karabodikolomela2@gmail.com",
-    "numberOfDays": "7",
-    "checkInDate": "2022-11-30",
-    "checkOutDate": "2022-12-07",
-    "price": 550,
-    "total": 3850
+    "numberOfDays": "15",
+    "checkInDate": "2022-11-24",
+    "checkOutDate": "2022-12-09",
+    "price": 500,
+    "total": 7500
 }
