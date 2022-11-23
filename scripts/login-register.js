@@ -11,6 +11,7 @@ document.querySelector(".popup .close-btn").addEventListener("click", function()
     // document.querySelector(".popup");
      document.querySelector(".popup").classList.remove("active");
  });
+ 
 
 //REGISTER
 document.querySelector("#show-register").addEventListener("click", function() {

@@ -174,7 +174,7 @@ if ($hotelName == 'High Garden') {
       <div class='subtitle'>Pure relaxation</div>
       <p class='hotel-info'>
       A cosy hotel with stunning ocean views, close to white-sand beaches and crystal clear waters.
-      The Sunset Hotel is a five-star establishment, promising maximum comfort and relaxation.<br><br>
+      High Garden is a five-star establishment, promising maximum comfort and relaxation.<br><br>
       <i class='fas fa-swimmer'></i> Pool: Yes<br>
       <i class='fas fa-wifi'></i>  WiFi: Yes<br>
       <i class='fas fa-umbrella-beach'></i>  Ocean view: Yes<br>
@@ -210,7 +210,7 @@ if ($hotelName == 'Winterfell') {
     <div class='subtitle'>All-in-one bliss</div>
     <p>
     This upmarket hotel offers a wide range of in-house entertainment, luxury spas and gourmet food.
-    Hotel Tropico is for holiday makers who enjoy the simplicity of having everything in one place. 
+    Winterfell is for holiday makers who enjoy the simplicity of having everything in one place. 
     <br><br>
     <i class='fas fa-swimmer'></i> Pool: Yes<br>
     <i class='fas fa-wifi'></i> WiFi: Yes<br>
@@ -359,7 +359,7 @@ if ($hoteltoCompare == 'Bravosi') {
     <h1>Bravosi</h1>
     <div class='subtitle'>An atmospheric getaway</div>
     <p>
-    A friendly and down-to-earth hotel close to public beaches, shops and nightlife. The Rustic Hotel is for young people looking 
+    A friendly and down-to-earth hotel close to public beaches, shops and nightlife. Bravosi is for young people looking 
     to be close to the action and fully soak up the city's atmosphere.<br><br>
     <i class='fas fa-swimmer'></i> Pool: No<br>
     <i class='fas fa-wifi'></i> WiFi: Yes<br>
@@ -397,7 +397,7 @@ if ($hoteltoCompare == 'High Garden') {
       <div class='subtitle'>Pure relaxation</div>
       <p class='hotel-info'>
       A cosy hotel with stunning ocean views, close to white-sand beaches and crystal clear waters.
-      The Sunset Hotel is a five-star establishment, promising maximum comfort and relaxation.<br><br>
+      High Garden is a five-star establishment, promising maximum comfort and relaxation.<br><br>
       <i class='fas fa-swimmer'></i> Pool: Yes<br>
       <i class='fas fa-wifi'></i>  WiFi: Yes<br>
       <i class='fas fa-umbrella-beach'></i>  Ocean view: Yes<br>
@@ -433,7 +433,7 @@ if ($hoteltoCompare == 'Winterfell') {
     <div class='subtitle'>All-in-one bliss</div>
     <p>
     This upmarket hotel offers a wide range of in-house entertainment, luxury spas and gourmet food.
-    Hotel Tropico is for holiday makers who enjoy the simplicity of having everything in one place. 
+    Winterfell is for holiday makers who enjoy the simplicity of having everything in one place. 
     <br><br>
     <i class='fas fa-swimmer'></i> Pool: Yes<br>
     <i class='fas fa-wifi'></i> WiFi: Yes<br>
