@@ -33,7 +33,7 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
 <body>
 
     <!--TITLE IMAGE-->
-    <header id="header" class="">
+    <!-- <header id="header" class="">
 
         <nav class="navbar navbar-expand-lg bg-light px-lg-3 py-lg-2 shadow-sm sticky-top">
             <div class="container-fluid">
@@ -70,10 +70,10 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
                 </div>
             </div>
         </nav>
-    </header>
+    </header> -->
 
     <div id="background">
-        <img src="/css/images/booking-app-cover-image.jpg" alt = "background image">
+        <!-- <img src="" alt = "background image"> -->
         <div class="title-container">
             <img src="./css/icons/8.png" alt="heavenly stay Logo" id="AppLogo">
             <p class="tagline">Book your dream holiday.</p>
@@ -444,22 +444,22 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
 
             <div class="grid">
             <div class="cell">
-                    <img src="/images/hotels/gallery/casterly-rock-1.jpg" class="responsive-image" />
+                    <img src="/images/casterly-rock-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/gallery/casterly-rock-2.jpg" class="responsive-image" />
+                    <img src="/images/casterly-rock-2.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/gallery/casterly-rock-3.jpg" class="responsive-image" />
+                    <img src="/images/bravosi-3.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/gallery/casterly-rock-4.jpg" class="responsive-image" />
+                    <img src="/images/casterly-rock-4.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/gallery/casterly-rock-5.jpg" class="responsive-image" />
+                    <img src="/images/casterly-rock-5.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/gallery/casterly-rock-6.jpg" class="responsive-image" />
+                    <img src="/images/casterly-rock-6.jpg" class="responsive-image" />
                 </div>
             </div>
 
