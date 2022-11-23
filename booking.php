@@ -9,7 +9,7 @@ session_start();?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
     <link rel="icon" href="images/paradise-favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Crimson+Text&display=swap" rel="stylesheet">
@@ -42,24 +42,24 @@ class Booking {
         $this->checkOutDate = $checkOutDate;
 
         if ($this->hotelName === "Casterly Rock"){
-            $this->price = 500; 
-        }
-        else if ($this->hotelName === "Bravosi") {
-            $this->price = 350;
-        }
-        else if ($this->hotelName === "High Garden") {
-          $this->price = 550;
-        }
-        else if ($this->hotelName === "Winterfell") {
-        $this->price = 400;
-        }
-        else if ($this->hotelName === "Kings Landing") {
+          $this->price = 500; 
+      }
+      else if ($this->hotelName === "Bravosi") {
           $this->price = 350;
-        }
-        else if ($this->hotelName === "The Vale") {
-          $this->price = 450;
-        }  
-        $_SESSION['price'] = $this->price;  
+      }
+      else if ($this->hotelName === "High Garden") {
+        $this->price = 550;
+      }
+      else if ($this->hotelName === "Winterfell") {
+      $this->price = 400;
+      }
+      else if ($this->hotelName === "Kings Landing") {
+        $this->price = 350;
+      }
+      else if ($this->hotelName === "The Vale") {
+        $this->price = 450;
+      }  
+      $_SESSION['price'] = $this->price;   
 
     }
 
@@ -114,12 +114,12 @@ class Booking {
         echo "<select class='hotel-options' name='hoteltoCompare'>";
 
         if ($this->hotelName == 'Casterly Rock') {
-           echo "<option value='Bravosi' name='Bravosi'>Bravosi</option>"; 
-           echo "<option value='High Garden' name='HighGarden'>High Garden</option>";
-           echo "<option value='Winterfell' name='Winterfell'>Winterfell</option>";
-           echo "<option value='Kings Landing' name='KingsLanding'>Kings Landing</option>";
-           echo "<option value='The Vale' name='TheVale'>The Vale</option>";      
-        }   
+          echo "<option value='Bravosi' name='Bravosi'>Bravosi</option>"; 
+          echo "<option value='High Garden' name='HighGarden'>High Garden</option>";
+          echo "<option value='Winterfell' name='Winterfell'>Winterfell</option>";
+          echo "<option value='Kings Landing' name='KingsLanding'>Kings Landing</option>";
+          echo "<option value='The Vale' name='TheVale'>The Vale</option>";      
+       }  
         
         if ($this->hotelName == 'Bravosi') {
           echo "<option value='Casterly Rock' name='CasterlyRock'>Casterly Rock</option>";
@@ -144,7 +144,6 @@ class Booking {
           echo "<option value='Kings Landing' name='KingsLanding'>Kings Landing</option>";
           echo "<option value='The Vale' name='TheVale'>The Vale</option>"; 
         }
-
         if ($this->hotelName == 'Kings Landing') {
           echo "<option value='Casterly Rock' name='CasterlyRock'>Casterly Rock</option>";
           echo "<option value='Bravosi' name='Bravosi'>Bravosi</option>";          
@@ -166,28 +165,28 @@ class Booking {
         echo "</form></div>";
 
         if ($this->hotelName == 'Casterly Rock') {
-        echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/casterly-rock.jpg' alt='Casterly Rock'></div>"; 
-        }
-
-        if ($this->hotelName == 'Bravosi') {
-        echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/bravosi.jpg' alt='Bravosi'></div>"; 
-        }
-
-        if ($this->hotelName == 'High Garden') {
-        echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/high-garden.jpg' alt='High Garden'></div>";
-        }
-
-        if ($this->hotelName == 'Winterfell') {
-        echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/winterfell.jpg' alt='Winterfell'></div>";  
-        }
-
-        if ($this->hotelName == 'Kings Landing') {
-          echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/kings-landing.jpg' alt='Kings Landing'></div>";  
-        }
-
-        if ($this->hotelName == 'The Vale') {
-          echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/the-vale.jpg' alt='The Vale'></div>";  
-        }
+          echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/casterly-rock.jpg' alt='Casterly Rock'></div>"; 
+          }
+  
+          if ($this->hotelName == 'Bravosi') {
+          echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/bravosi.jpg' alt='Bravosi'></div>"; 
+          }
+  
+          if ($this->hotelName == 'High Garden') {
+          echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/high-garden.jpg' alt='High Garden'></div>";
+          }
+  
+          if ($this->hotelName == 'Winterfell') {
+          echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/winterfell.jpg' alt='Winterfell'></div>";  
+          }
+  
+          if ($this->hotelName == 'Kings Landing') {
+            echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/kings-landing.jpg' alt='Kings Landing'></div>";  
+          }
+  
+          if ($this->hotelName == 'The Vale') {
+            echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/the-vale.jpg' alt='The Vale'></div>";  
+          }
 
         echo "</div>";
         echo "</div>";

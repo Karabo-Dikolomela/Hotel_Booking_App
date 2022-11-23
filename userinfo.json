@@ -3,9 +3,9 @@
     "name": "Karabo",
     "surname": "Dikolomela",
     "emailAddress": "karabodikolomela2@gmail.com",
-    "numberOfDays": "18",
-    "checkInDate": "2022-11-22",
-    "checkOutDate": "2022-12-10",
+    "numberOfDays": "5",
+    "checkInDate": "2022-11-24",
+    "checkOutDate": "2022-11-29",
     "price": 500,
-    "total": 9000
+    "total": 2500
 }

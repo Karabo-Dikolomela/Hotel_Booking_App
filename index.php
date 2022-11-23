@@ -1,3 +1,13 @@
+<?php session_start(); ?>
+<?php
+$hotels =
+    array(
+        array('' => "<img style='width:150px;' src='images/the-commodore-hotel.jpg' alt='The Commodore Hotel'>", 'Name' => 'The Commodore Hotel', 'Description' => 'Upmarket hotel with a view of the ocean and private beach access.', 'Pool' => 'Yes', 'WiFi' => 'Yes', 'Ocean view' => 'Yes', 'Pets allowed' => 'No', 'button' => "<form action='email.php' method='post'><button class='button'>Book</button></form>"),
+        array('' => "<img style='width:150px;' src='images/the-rustic-hotel.jpg' alt='The Rustic Hotel'>", 'Name' => 'The Rustic Hotel', 'Description' => 'Friendly and down-to-earth accommodation close to public beaches, shops and nightlife.', 'Pool' => 'No', 'WiFi' => 'Yes', 'Ocean view' => 'Yes', 'Pets allowed' => 'Yes', 'button' => "<form action='email.php' method='post'><button class='button'>Book</button></form>"),
+    );
+file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,32 +15,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php
-    include("./includes/links.php")
-    ?>
     <title>Heavenly Stay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="icon" href="images/paradise-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
 </head>
 
-
 <body>
-    
+
+    <!--TITLE IMAGE-->
+    <header id="header" class="">
+
+        <nav class="navbar navbar-expand-lg bg-light px-lg-3 py-lg-2 shadow-sm sticky-top">
+            <div class="container-fluid">
+                <h2 class="heavenly">HEAVENLY STAY</h2><br>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active me-2" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-2" href="#">Hotels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-2" href="#">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-2" href="#">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex" role="search">
+                        <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Login
+                        </button>
+                        <button type="button" class="btn btn-outline-dark shadow-none" data-bs-toggle="modal" data-bs-target="#registerModal">
+                            Register
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <div id="background">
-    <?php require("includes/header.php") ?>
-    <?php require("includes/login-register.php") ?>
-
-
+        <img src="/css/images/booking-app-cover-image.jpg" alt = "background image">
         <div class="title-container">
-            <img src="./images/logo/8.png" alt="heavenly stay Logo" id="AppLogo">
-            <p class="tagline">Book your heavenly stay location.
-                <button class="arrow">Login in to make a booking<a href="#booking-form"> <i class="arrow fas fa-level-up-alt"></i></a></button>
-            </p>
+            <img src="./css/icons/8.png" alt="heavenly stay Logo" id="AppLogo">
+            <p class="tagline">Book your dream holiday.</p>
+            <a href="#call-to-action"><i class="arrow-down bounce fas fa-angle-double-down fa-2x"></i></a>
         </div>
     </div>
 
+    <!--header id="header" class="">
+        <div class="header-cont container">
+            <div class="left-cont">
+                <h2>HEAVENLY STAY</h2>
+                <ul class="main-nav">
+                    <li class="nav-item active">Home</li>
+                    <li class="nav-item">Login</li>
+                    <li class="nav-item">Gallery</li>
+                    <li class="nav-item">Booking</li>
+                    <li class="nav-item">Contact Us</li>
+                </ul>
+
+                <div id="background">
+                    <div class="title-container">
+                        <img src="./css/icons/6.png" alt="heavenly stay Logo" id="AppLogo">
+                        <p class="tagline">Book your dream holiday.</p>
+                        <a href="#call-to-action"><i class="arrow-down bounce fas fa-angle-double-down fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </header-->
+
     <!--CALL-TO-ACTION MESSAGE-->
     <div id="call-to-action" class="call-to-action">
-        <h2 class="voyage-message">Tired from voyaging</h2>
-        <p>Make a stop at one of our luxurious hotels for a heavenly stay.<br><br>
+        <h2>Tired from a long voyage</h2>
+        <p>Make a stop at one of our luxurious hotels for a heavenly stay.. Scroll
+            down to see our offering and fill in the booking form to do a price comparison.<br><br>
+            <button class="button center">Book<a href="#booking-form"> <i class="arrow fas fa-level-down-alt"></i></a></button>
         </p>
     </div>
 
@@ -112,6 +194,8 @@
 
         </div>
     </div>
+
+
     <!--HOTEL INFO SECTION 2-->
     <div class="card-container">
         <div class="flex-container">
@@ -154,8 +238,6 @@
                 </div>
             </div>
 
-
-
             <!--CARD 4 WINTERFELL-->
             <div class="card">
                 <div class="card-image" style="background-image: url(./images/hotels/cards/winterfell.jpg)"></div>
@@ -196,12 +278,13 @@
         </div>
     </div>
 
+
     <!--HOTEL INFO SECTION 3-->
     <div class="card-container">
         <div class="flex-container">
 
-            <!--CARD 5 KINGS LANDING-->
-            <div class="card">
+    <!--CARD 5 KINGS LANDING-->
+    <div class="card">
                 <div class="card-image" style="background-image: url(./images/hotels/cards/kings-landing.jpg)"></div>
                 <div class="card-content">
 
@@ -238,8 +321,8 @@
                 </div>
             </div>
 
-            <!--CARD 6 THE VALE-->
-            <div class="card">
+             <!--CARD 6 THE VALE-->
+             <div class="card">
                 <div class="card-image" style="background-image: url(./images/hotels/cards/the-vale.jpg)"></div>
                 <div class="card-content">
 
@@ -281,6 +364,7 @@
     <br><br><br>
 
     <br><br><br>
+
 
     <!--BOOKING FORM GRID-->
     <div id="booking-form" class="booking-form-container">
@@ -334,6 +418,7 @@
             </div>
 
         </form>
+
     </div>
 
     <?php
@@ -358,8 +443,7 @@
         <div class="gallery-container">
 
             <div class="grid">
-
-                <div class="cell">
+            <div class="cell">
                     <img src="/images/hotels/gallery/casterly-rock-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
@@ -393,7 +477,7 @@
         <div class="gallery-container">
 
             <div class="grid">
-                <div class="cell">
+            <div class="cell">
                     <img src="/images/hotels/gallery/bravosi-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
@@ -417,6 +501,7 @@
 
     </div>
 
+
     <!--MODAL 3-->
     <div id="modal-3" class="modal-overlay">
         <div class="modal-container">
@@ -427,7 +512,7 @@
         <div class="gallery-container">
 
             <div class="grid">
-                <div class="cell">
+            <div class="cell">
                     <img src="/images/hotels/high-garden-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
@@ -451,8 +536,9 @@
 
     </div>
 
-        <!--MODAL 4-->
-        <div id="modal-4" class="modal-overlay">
+
+    <!--MODAL 4-->
+    <div id="modal-4" class="modal-overlay">
         <div class="modal-container">
             <a class="close-btn close-btn-4">X</a>
         </div>
@@ -461,7 +547,7 @@
         <div class="gallery-container">
 
             <div class="grid">
-                <div class="cell">
+            <div class="cell">
                     <img src="/images/hotels/winterfell-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
@@ -485,8 +571,8 @@
 
     </div>
 
-        <!--MODAL 5-->
-        <div id="modal-5" class="modal-overlay">
+    <!--MODAL 5-->
+    <div id="modal-5" class="modal-overlay">
         <div class="modal-container">
             <a class="close-btn close-btn-5">X</a>
         </div>
@@ -495,7 +581,7 @@
         <div class="gallery-container">
 
             <div class="grid">
-                <div class="cell">
+            <div class="cell">
                     <img src="/images/hotels/kings-landing-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
@@ -519,8 +605,8 @@
 
     </div>
 
-        <!--MODAL 6-->
-        <div id="modal-6" class="modal-overlay">
+    <!--MODAL 6-->
+    <div id="modal-6" class="modal-overlay">
         <div class="modal-container">
             <a class="close-btn close-btn-6">X</a>
         </div>
@@ -529,7 +615,7 @@
         <div class="gallery-container">
 
             <div class="grid">
-                <div class="cell">
+            <div class="cell">
                     <img src="images/the-vale-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
@@ -553,9 +639,7 @@
 
     </div>
 
-    <script src="/scripts/bookingapp.js"></script>
-    
-
+    <script src="scripts/bookingapp.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Compare</title>
   <link rel="icon" href="images/paradise-favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Crimson+Text&display=swap" rel="stylesheet">
@@ -30,55 +30,55 @@ $hoteltoCompare = $_POST['hoteltoCompare'];
 
 
 
-    switch ($hoteltoCompare) {
-        case 'Casterly Rock':
-        $comparisonPrice = $numberOfDays*500;
-        echo "<p class='compare-message'>You are booking <strong>" . $hotelName . "</strong> for "
-        . $numberOfDays . " nights at <strong>R" .$total 
-        . "</strong>. Casterly Rock is R" . $comparisonPrice . " for the same duration.
-        <br>Are you sure you want to go ahead? Compare the features below and confirm by clicking 'Book now'.</p>";
-            break;
+switch ($hoteltoCompare) {
+  case 'Casterly Rock':
+  $comparisonPrice = $numberOfDays*500;
+  echo "<p class='compare-message'>You are booking <strong>" . $hotelName . "</strong> for "
+  . $numberOfDays . " nights at <strong>R" .$total 
+  . "</strong>. Casterly Rock is R" . $comparisonPrice . " for the same duration.
+  <br>Are you sure you want to go ahead? Compare the features below and confirm by clicking 'Book now'.</p>";
+      break;
 
-        case 'Bravosi':
-        $comparisonPrice = $numberOfDays*350;
-        echo "<p class='compare-message'>You are booking <strong>" . $hotelName . "</strong> for " 
-        . $numberOfDays . " nights at <strong>R". $total . "</strong> (R" . $price . " per night).
-       Bravosi is R" . $comparisonPrice . " for the same duration. 
-        <br>Compare the hotels below and confirm by clicking 'Book now'.</p>";
-            break;
+  case 'Bravosi':
+  $comparisonPrice = $numberOfDays*350;
+  echo "<p class='compare-message'>You are booking <strong>" . $hotelName . "</strong> for " 
+  . $numberOfDays . " nights at <strong>R". $total . "</strong> (R" . $price . " per night).
+ Bravosi is R" . $comparisonPrice . " for the same duration. 
+  <br>Compare the hotels below and confirm by clicking 'Book now'.</p>";
+      break;
 
-        case 'High Garden':
-        $comparisonPrice = $numberOfDays*550;
-        echo "<p class='compare-message'>You are booking <strong>" . $hotelName . "</strong> for "
-        . $numberOfDays . " nights at <strong>R" .$total . "</strong> (R" . $price . " per night).
-        High Garden is R" . $comparisonPrice . " for the same duration.
-        <br>Compare the hotels below and confirm by clicking 'Book now'.</p>";
-            break;  
-            
-        case 'Winterfell':
-        $comparisonPrice = $numberOfDays*400;
-        echo "<p class='compare-message'>You are booking <strong>" . $hotelName . "</strong> for "
-        . $numberOfDays . " nights at <strong>R" .$total . "</strong> (R" . $price . " per night).
-        Winterfell is R" . $comparisonPrice . " for the same duration.
-        <br>Compare the hotels below and confirm by clicking 'Book now'.</p>";
-            break;  
-            
-        case 'Kings Landing':
-        $comparisonPrice = $numberOfDays*350;
-        echo "<p class='compare-message'>You are booking <strong>" . $hotelName . "</strong> for "
-        . $numberOfDays . " nights at <strong>R" .$total . "</strong> (R" . $price . " per night).
-        Kings Landing is R" . $comparisonPrice . " for the same duration.
-        <br>Compare the hotels below and confirm by clicking 'Book now'.</p>";
-            break;
+  case 'High Garden':
+  $comparisonPrice = $numberOfDays*550;
+  echo "<p class='compare-message'>You are booking <strong>" . $hotelName . "</strong> for "
+  . $numberOfDays . " nights at <strong>R" .$total . "</strong> (R" . $price . " per night).
+  High Garden is R" . $comparisonPrice . " for the same duration.
+  <br>Compare the hotels below and confirm by clicking 'Book now'.</p>";
+      break;  
+      
+  case 'Winterfell':
+  $comparisonPrice = $numberOfDays*400;
+  echo "<p class='compare-message'>You are booking <strong>" . $hotelName . "</strong> for "
+  . $numberOfDays . " nights at <strong>R" .$total . "</strong> (R" . $price . " per night).
+  Winterfell is R" . $comparisonPrice . " for the same duration.
+  <br>Compare the hotels below and confirm by clicking 'Book now'.</p>";
+      break;  
+      
+  case 'Kings Landing':
+  $comparisonPrice = $numberOfDays*350;
+  echo "<p class='compare-message'>You are booking <strong>" . $hotelName . "</strong> for "
+  . $numberOfDays . " nights at <strong>R" .$total . "</strong> (R" . $price . " per night).
+  Kings Landing is R" . $comparisonPrice . " for the same duration.
+  <br>Compare the hotels below and confirm by clicking 'Book now'.</p>";
+      break;
 
-        case 'The Vale':
-        $comparisonPrice = $numberOfDays*350;
-        echo "<p class='compare-message'>You are booking <strong>" . $hotelName . "</strong> for "
-        . $numberOfDays . " nights at <strong>R" .$total . "</strong> (R" . $price . " per night).
-        The Vale is R" . $comparisonPrice . " for the same duration.
-        <br>Compare the hotels below and confirm by clicking 'Book now'.</p>";
-            break;                
-    }
+  case 'The Vale':
+  $comparisonPrice = $numberOfDays*350;
+  echo "<p class='compare-message'>You are booking <strong>" . $hotelName . "</strong> for "
+  . $numberOfDays . " nights at <strong>R" .$total . "</strong> (R" . $price . " per night).
+  The Vale is R" . $comparisonPrice . " for the same duration.
+  <br>Compare the hotels below and confirm by clicking 'Book now'.</p>";
+      break;                
+}
 
 ?>
 

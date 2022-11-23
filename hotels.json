@@ -1,7 +1,7 @@
 [
     {
-        "": "<img style='width:150px;' src='images\/casterly-rock-1.jpg' alt='Casterly Rock'>",
-        "Name": "Casterly Rock",
+        "": "<img style='width:150px;' src='images\/the-commodore-hotel.jpg' alt='The Commodore Hotel'>",
+        "Name": "The Commodore Hotel",
         "Description": "Upmarket hotel with a view of the ocean and private beach access.",
         "Pool": "Yes",
         "WiFi": "Yes",
@@ -10,8 +10,8 @@
         "button": "<form action='email.php' method='post'><button class='button'>Book<\/button><\/form>"
     },
     {
-        "": "<img style='width:150px;' src='images\/bravosi.jpg' alt='Bravosi'>",
-        "Name": "Bravosi",
+        "": "<img style='width:150px;' src='images\/the-rustic-hotel.jpg' alt='The Rustic Hotel'>",
+        "Name": "The Rustic Hotel",
         "Description": "Friendly and down-to-earth accommodation close to public beaches, shops and nightlife.",
         "Pool": "No",
         "WiFi": "Yes",

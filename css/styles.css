@@ -29,7 +29,7 @@ body {
 }
 
 #background {
-    background-image: url("/images/booking-app-cover-image1.jpg");
+    background-image: url("/css/images/booking-app-cover-image.jpg");
     background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
