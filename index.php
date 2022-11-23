@@ -133,7 +133,7 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
 
             <!--CARD 1 CASTERLY ROCKL-->
             <div class="card">
-                <div class="card-image" style="background-image: url(./images/hotels/cards/casterly-rock.jpg)"></div>
+                <div class="card-image" style="background-image: url(./images/casterly-rock.jpg)"></div>
                 <div class="card-content">
 
                     <h1>Casterly Rock</h1>
@@ -169,7 +169,7 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
 
             <!--CARD 2 BRAVOSI-->
             <div class="card">
-                <div class="card-image" style="background-image: url(./images/hotels/cards/bravosi.jpg)"></div>
+                <div class="card-image" style="background-image: url(./images/bravosi.jpg)"></div>
                 <div class="card-content">
 
                     <h1>Bravosi</h1>
@@ -213,7 +213,7 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
 
             <!--CARD 3 HIGH GARDEN-->
             <div class="card">
-                <div class="card-image" style="background-image: url(./images/hotels/cards/high-garden.jpg)"></div>
+                <div class="card-image" style="background-image: url(./images/high-garden.jpg)"></div>
                 <div class="card-content">
 
                     <h1>High Garden</h1>
@@ -251,7 +251,7 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
 
             <!--CARD 4 WINTERFELL-->
             <div class="card">
-                <div class="card-image" style="background-image: url(./images/hotels/cards/winterfell.jpg)"></div>
+                <div class="card-image" style="background-image: url(./images/winterfell.jpg)"></div>
                 <div class="card-content">
 
                     <h1>Winterfell</h1>
@@ -296,7 +296,7 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
 
             <!--CARD 5 KINGS LANDING-->
             <div class="card">
-                <div class="card-image" style="background-image: url(./images/hotels/cards/kings-landing.jpg)"></div>
+                <div class="card-image" style="background-image: url(./images/kings-landing.jpg)"></div>
                 <div class="card-content">
 
                     <h1>King's Landing</h1>
@@ -334,7 +334,7 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
 
             <!--CARD 6 THE VALE-->
             <div class="card">
-                <div class="card-image" style="background-image: url(./images/hotels/cards/the-vale.jpg)"></div>
+                <div class="card-image" style="background-image: url(./images/the-vale.jpg)"></div>
                 <div class="card-content">
 
                     <h1>The Vale</h1>
@@ -455,22 +455,22 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
 
             <div class="grid">
                 <div class="cell">
-                    <img src="/images/casterly-rock-1.jpg" class="responsive-image" />
+                    <img src="./images/casterly-rock-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/casterly-rock-2.jpg" class="responsive-image" />
+                    <img src="./images/casterly-rock-2.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/bravosi-3.jpg" class="responsive-image" />
+                    <img src="./images/bravosi-3.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/casterly-rock-4.jpg" class="responsive-image" />
+                    <img src="./images/casterly-rock-4.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/casterly-rock-5.jpg" class="responsive-image" />
+                    <img src="./images/casterly-rock-5.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/casterly-rock-6.jpg" class="responsive-image" />
+                    <img src="./images/casterly-rock-6.jpg" class="responsive-image" />
                 </div>
             </div>
 
@@ -489,22 +489,22 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
 
             <div class="grid">
                 <div class="cell">
-                    <img src="/images/hotels/gallery/bravosi-1.jpg" class="responsive-image" />
+                    <img src="./images/bravosi-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/gallery/bravosi-2.jpg" class="responsive-image" />
+                    <img src="./images/bravosi-2.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/gallery/bravosi-3.jpg" class="responsive-image" />
+                    <img src="./images/bravosi-3.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/gallery/bravosi-4.jpg" class="responsive-image" />
+                    <img src="./images/bravosi-4.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/gallery/bravosi-5.jpg" class="responsive-image" />
+                    <img src="./images/bravosi-5.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/gallery/bravosi-6.jpg" class="responsive-image" />
+                    <img src="./images/bravosi-6.jpg" class="responsive-image" />
                 </div>
             </div>
 
@@ -524,22 +524,22 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
 
             <div class="grid">
                 <div class="cell">
-                    <img src="/images/hotels/high-garden-1.jpg" class="responsive-image" />
+                    <img src="./images/high-garden-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/high-garden-2.jpg class=" responsive-image" />
+                    <img src="./images/high-garden-2.jpg" class=" responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/high-garden-3.jpg" class="responsive-image" />
+                    <img src="./images//high-garden-3.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/high-garden-4.jpg" class="responsive-image" />
+                    <img src="./images/high-garden-4.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/high-garden-5.jpg" class="responsive-image" />
+                    <img src="./images/high-garden-5.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/high-garden-6.jpg" class="responsive-image" />
+                    <img src="./images/high-garden-6.jpg" class="responsive-image" />
                 </div>
             </div>
 
@@ -559,22 +559,22 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
 
             <div class="grid">
                 <div class="cell">
-                    <img src="/images/hotels/winterfell-1.jpg" class="responsive-image" />
+                    <img src="./images/winterfell-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/winterfell-2.jpg" class="responsive-image" />
+                    <img src="./images/winterfell-2.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/winterfell-3.jpg" class="responsive-image" />
+                    <img src="./images/winterfell-3.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/winterfell-4.jpg" class="responsive-image" />
+                    <img src="./images/winterfell-4.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/winterfell-5.jpg" class="responsive-image" />
+                    <img src="./images/winterfell-5.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/winterfell-6.jpg" class="responsive-image" />
+                    <img src="./images/winterfell-6.jpg" class="responsive-image" />
                 </div>
             </div>
 
@@ -593,22 +593,22 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
 
             <div class="grid">
                 <div class="cell">
-                    <img src="/images/hotels/kings-landing-1.jpg" class="responsive-image" />
+                    <img src="./images/kings-landing-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/kings-landing-2.jpg" class="responsive-image" />
+                    <img src="./images/kings-landing-2.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/kings-landing-3.jpg" class="responsive-image" />
+                    <img src="./images/kings-landing-3.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/kings-landing-4.jpg.jpg" class="responsive-image" />
+                    <img src="./images/kings-landing-4.jpg.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/kings-landing-5.jpg" class="responsive-image" />
+                    <img src="./images/kings-landing-5.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="/images/hotels/kings-landing-6.jpg" class="responsive-image" />
+                    <img src="./images/kings-landing-6.jpg" class="responsive-image" />
                 </div>
             </div>
 
@@ -627,22 +627,22 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
 
             <div class="grid">
                 <div class="cell">
-                    <img src="images/the-vale-1.jpg" class="responsive-image" />
+                    <img src="./images/the-vale-1.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="images/the-vale-2.jpg" class="responsive-image" />
+                    <img src="./images/the-vale-2.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="images/the-vale-3.jpg" class="responsive-image" />
+                    <img src="./images/the-vale-3.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="images/the-vale-4.jpg" class="responsive-image" />
+                    <img src="./images/the-vale-4.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="images/the-vale-5.jpg" class="responsive-image" />
+                    <img src="./images/the-vale-5.jpg" class="responsive-image" />
                 </div>
                 <div class="cell">
-                    <img src="images/the-vale-6.jpg" class="responsive-image" />
+                    <img src="./images/the-vale-6.jpg" class="responsive-image" />
                 </div>
             </div>
 
