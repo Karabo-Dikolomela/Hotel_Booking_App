@@ -9,7 +9,7 @@ This a project is a back end hotel booking app created for the purpose of learni
 *JavaScript
 
 ## Guide
-| Function | Display
+| Function | Display |
 | :------------- | :------------- |
 | Home Page | ![preview](https://github.com/Karabo-Dikolomela/Hotel_Booking_App/blob/main/images/home-page.png) |
 | Browse | ![preview](https://github.com/Karabo-Dikolomela/Hotel_Booking_App/blob/main/images/browse.png) |
