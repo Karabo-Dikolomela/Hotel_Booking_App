@@ -38,9 +38,9 @@ file_put_contents('hotels.json', json_encode($hotels, JSON_PRETTY_PRINT));
             <div class="left-cont">
                 <ul class="main-nav">
                     <li class="nav-item active">Home</li>
-                    <li class="nav-item">View Hotels</li>
+                    <li class="nav-item">View Gallery</li>
                     <li class="nav-item">Booking</li>
-                    <li class="nav-item">Contact Us</li>
+                    <li class="nav-item">Compare</li>
                     <li class="nav-item">About</li>
                 </ul>
             </div>
